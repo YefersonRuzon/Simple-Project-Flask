@@ -1,0 +1,106 @@
+{% extends './layout.html' %}
+
+{% block title %}Ruzon{% endblock %}
+{% block intro %}<div class="container--">
+    <div class="text-wrapper">
+        <div class="text1-- text--">• Style and functionality •</div>
+        <div class="text2-- text--">• Style and functionality •</div>
+        <div class="text3-- text--">• Style and functionality •</div>
+        <div class="text4-- text--">• Style and functionality •</div>
+        <div class="text5-- text--">• Style and functionality •</div>
+        <div class="text6-- text--">• Style and functionality •</div>
+        <div class="text7-- text--">• Style and functionality •</div>
+        <div class="text8-- text--">• Style and functionality •</div>
+        <div class="text9-- text--">• Style and functionality •</div>
+        <div class="text10-- text--">• Style and functionality •</div>
+        <div class="text11-- text--">• Style and functionality •</div>
+    </div>
+</div>{% endblock %}
+{% block body %}
+
+
+
+
+<section class="section-greeting">
+ 
+  <div class="greeting">
+      <span class="animated-greeting">H</span>
+      <span class="animated-greeting">i</span>
+      <span class="animated-greeting">,</span><br>
+      <span class="animated-greeting">i</span>
+      <span class="animated-greeting">’</span>
+      <span class="animated-greeting spacing">m</span>
+
+      <span class="animated-greeting">Y</span>
+      <span class="animated-greeting">e</span>
+      <span class="animated-greeting">f</span>
+      <span class="animated-greeting">e</span>
+      <span class="animated-greeting">r</span>
+      <span class="animated-greeting">s</span>
+      <span class="animated-greeting">o</span>
+      <span class="animated-greeting">n</span><br>
+      <span class="animated-greeting">a</span>
+      <span class="animated-greeting">n</span>
+      <span class="animated-greeting spacing">d</span>
+
+      <span class="animated-greeting">t</span>
+      <span class="animated-greeting">h</span>
+      <span class="animated-greeting">i</span>
+      <span class="animated-greeting">s</span>
+      <span class="animated-greeting">.</span>
+      <span class="animated-greeting">.</span>
+      <span class="animated-greeting spacing">.</span>
+
+      <span class="animated-greeting">i</span>
+      <span class="animated-greeting spacing">s</span>
+
+      <span class="animated-greeting ">m</span>
+      <span class="animated-greeting spacing">y</span>
+
+      <span class="animated-greeting">w</span>
+      <span class="animated-greeting">e</span>
+      <span class="animated-greeting">b</span>
+      <span class="animated-greeting">s</span>
+      <span class="animated-greeting">i</span>
+      <span class="animated-greeting">t</span>
+      <span class="animated-greeting">e</span>
+      <br>
+     <div class="greeting-p"> <p>Front-end Web developer</p><p>/</p><p>Web designer</p></div>
+  <br>
+  <a href="{{ url_for ('contact')}}"><button class="btn-contact">Contact</button></a>
+  </div>
+  <i class="fas fa-chevron-down"></i>
+</section>
+
+
+
+
+<section class="section-img-home">
+    <h2 class="h2-s-home">• Style and functionality •</h2>
+
+<div class="container-img-home">
+
+    
+
+    <div class="img--content" id="img--1">
+        <img class="img-code" src="{{ url_for('static', filename='img/code.jpg') }}" alt="code-img-yrz">
+        <h3 class="img--h3 d">Design</h3>
+    </div>
+    <div class="img--content" id="img--2">
+        <img class="img-code"  src="{{ url_for('static', filename='img/code2.jpg') }}" alt="code-img-yrz">
+        <h3 class="img--h3 s">Style</h3>
+    </div>
+    <div class="img--content" id="img--3">
+        <img class="img-code" id="img-h-3" src="{{ url_for('static', filename='img/co-de.jpg') }}" alt="code-img-yrz">
+        <h3 class="img--h3 p">pleasant</h3>
+    </div>
+    <div class="img--content" id="img--4"> 
+        <img class="img-code"  src="{{ url_for('static', filename='img/cod-e.jpg') }}" alt="code-img-yrz">
+        <h3 class="img--h3 a">accessibility</h3>
+    </div>
+    
+</div>
+<p class="p--u">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ipsum neque laborum quos praesentium repellendus culpa reiciendis nihil ipsa eligendi veniam rem labore sunt eveniet facere possimus optio, sit dignissimos.</p>
+</section>
+
+{% endblock %}

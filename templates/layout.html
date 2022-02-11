@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://kit.fontawesome.com/77395cd957.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    
+    <script src="/static/js/butter.js"></script>
+    
+
+</head>
+<body>
+    {% block intro %}
+    {% endblock %}
+
+    
+
+        
+        <sidebar class="sidebar">
+            <div class="toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div> 
+            <a href="/" class="logo"><img class="logo" src="{{ url_for('static', filename='img/Logo.jpeg') }}" alt="logo"></a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a href="/" class="nav-menu-link">Home</a></li>
+                    <li class="nav-menu-item"><a href="{{ url_for ('about')}}" class="nav-menu-link">About me</a></li>
+                    <li class="nav-menu-item"><a href="{{ url_for ('skills')}}" class="nav-menu-link">Skills</a></li>
+                    <li class="nav-menu-item"><a href="{{ url_for ('works')}}" class="nav-menu-link">Works</a></li>
+                    <li class="nav-menu-item"><a href="{{ url_for ('contact')}}" class="nav-menu-link">Contact</a></li>
+                </ul>
+                
+               
+                
+                    <ul class="social-elements">
+                        <li><a href="https://www.facebook.com/ruzondavidj" target="_blank"><i id="social-icon" class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/jefferson_ruzon/" target="_blank"><i id="social-icon" class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/jefferson_ruzo" target="_blank"><i id="social-icon" class="fab fa-twitter"></i></a></li>
+                    </ul>
+                
+                
+                
+                </sidebar>
+                <main id="butter">
+     <main class="content-sections">
+        
+                {% block body %} {% endblock %}
+                
+                
+
+
+                <footer class="footer"> 
+                    <div class="footer-container">
+                       
+                        <div class="row-footer">
+                            <div class="footer-col">
+                                <h4>About me</h4>
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">My experience</a></li>
+                                    <li><a href="#">Way of learning</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-col">
+                                <h4>Skills</h4>
+                                <ul>
+                                    <li><a href="#">Graph</a></li>
+                                    <li><a href="#">I have worked with</a></li>
+                                    <li><a href="#">Clarification</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-col">
+                                <h4>Works</h4>
+                                <ul>
+                                    <li><a href="#">Info</a></li>
+                                    <li><a href="#">Complete works</a></li>
+                                    <li><a href="#">next projects</a></li>
+                                </ul>
+                            </div>  
+                            <div class="footer-col">
+                                <h4>follow me</h4>
+                                <div class="social-links">
+                                    <a href="https://www.facebook.com/ruzondavidj" target="_blank"><i id="footer-i" class="fab fa-facebook"></i></a>
+                                    <a href="https://www.instagram.com/jefferson_ruzon/" target="_blank"><i id="footer-i" class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/jefferson_ruzo" target="_blank"><i id="footer-i" class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+
+
+
+            </main>
+    </main>
+    
+    
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    
+</body>
+</html>
